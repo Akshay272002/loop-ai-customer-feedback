@@ -1,36 +1,195 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LOOP AI – Customer Feedback Intelligence Platform
 
-## Getting Started
+An AI-powered customer feedback management platform that collects, analyzes, and visualizes customer feedback using Large Language Models (LLMs).
 
-First, run the development server:
+## Live Demo
+
+**Website:** https://loop-ai-customer-feedback-beta.vercel.app
+
+## Features
+
+- User Authentication (NextAuth)
+- Customer Feedback Submission
+- Bulk CSV Feedback Import
+- AI Sentiment Analysis
+- AI Category Classification
+- AI Priority Detection
+- AI Executive Summary
+- AI Insights
+- Dashboard Analytics
+- Reports Dashboard
+- Feedback Status Management
+- Pagination
+- Export Dashboard as PDF
+- Responsive UI
+
+---
+
+## Tech Stack
+
+### Frontend
+- Next.js 16
+- React
+- TypeScript
+- Tailwind CSS
+
+### Backend
+- Next.js API Routes
+- Prisma ORM
+- PostgreSQL (Neon)
+
+### Authentication
+- NextAuth.js
+
+### AI
+- Groq API
+- Llama 3.3 70B Versatile
+
+### Deployment
+- Vercel
+
+---
+
+## Project Structure
+
+```
+app/
+├── dashboard/
+├── feedback/
+├── reports/
+├── api/
+│   ├── feedback/
+│   ├── summary/
+│   ├── insights/
+│   └── reports/
+components/
+lib/
+prisma/
+```
+
+---
+
+## Screenshots
+
+### Home Page
+
+(Add Screenshot)
+
+### Customer Feedback
+
+(Add Screenshot)
+
+### Dashboard
+
+(Add Screenshot)
+
+### Reports
+
+(Add Screenshot)
+
+### CSV Import
+
+(Add Screenshot)
+
+---
+
+## Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/Akshay272002/loop-ai-customer-feedback.git
+```
+
+Go to project folder
+
+```bash
+cd loop-ai-customer-feedback
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Create `.env`
+
+```env
+DATABASE_URL=your_database_url
+AUTH_SECRET=your_secret
+GROQ_API_KEY=your_groq_api_key
+NEXTAUTH_URL=http://localhost:3000
+```
+
+Run Prisma
+
+```bash
+npx prisma db push
+```
+
+Start development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## AI Workflow
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Customer Feedback
 
-## Learn More
+↓
 
-To learn more about Next.js, take a look at the following resources:
+Groq LLM
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+↓
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Sentiment Classification
 
-## Deploy on Vercel
+↓
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Category Detection
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+↓
+
+Priority Prediction
+
+↓
+
+Executive Summary
+
+↓
+
+AI Insights
+
+↓
+
+Dashboard Analytics
+
+---
+
+## Future Improvements
+
+- Multi-tenant Workspace
+- Email Notifications
+- Dark Mode
+- Advanced Analytics
+- Custom AI Models
+- Real-time Dashboard
+
+---
+
+## Author
+
+**Akshay Lawand**
+
+GitHub:
+https://github.com/Akshay272002
+
+---
+
+## License
+
+MIT License
