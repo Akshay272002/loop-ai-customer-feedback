@@ -73,23 +73,27 @@ prisma/
 
 ### Home Page
 
-(Add Screenshot)
+![Home Page](screenshots/home.png)
 
 ### Customer Feedback
 
-(Add Screenshot)
+![Customer Feedback](screenshots/feedback.png)
 
 ### Dashboard
 
-(Add Screenshot)
+![Dashboard](screenshots/dashboard.png)
 
 ### Reports
 
-(Add Screenshot)
+![Reports](screenshots/reports.png)
 
 ### CSV Import
 
-(Add Screenshot)
+![CSV Import](screenshots/csv-import.png)
+
+### AI Insights
+
+![AI Insights](screenshots/ai-insights.png)
 
 ---
 
