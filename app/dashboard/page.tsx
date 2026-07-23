@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import AIInsights from "@/components/dashboard/AIInsights";
 import Sidebar from "@/components/dashboard/Sidebar";
 import StatCard from "@/components/dashboard/StatCard";
