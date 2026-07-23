@@ -1,0 +1,52 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  ANALYST
+  VIEWER
+}
+
+enum FeedbackStatus {
+  NEW
+  REVIEWED
+  RESOLVED
+}
+
+model Workspace {
+  id        String   @id @default(cuid())
+  name      String
+  users     User[]
+  feedbacks Feedback[]
+  createdAt DateTime @default(now())
+}
+
+model User {
+  id          String    @id @default(cuid())
+  name        String
+  email       String    @unique
+  password    String
+  role        Role
+  workspaceId String
+  workspace   Workspace @relation(fields: [workspaceId], references: [id])
+}
+
+model Feedback {
+  id          String         @id @default(cuid())
+  customer    String
+  message     String
+  sentiment   String?
+  category    String?
+  summary     String?
+  priority    String?
+  status      FeedbackStatus @default(NEW)
+  workspaceId String
+  workspace   Workspace      @relation(fields: [workspaceId], references: [id])
+  createdAt   DateTime       @default(now())
+}
