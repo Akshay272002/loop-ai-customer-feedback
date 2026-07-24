@@ -64,7 +64,7 @@ export default function LoginPage() {
           type="submit"
           className="w-full bg-black text-white p-3 rounded"
         >
-          Login
+          Admin Login
         </button>
       </form>
     </main>
