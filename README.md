@@ -6,6 +6,17 @@ An AI-powered customer feedback management platform that collects, analyzes, and
 
 **Website:** https://loop-ai-customer-feedback-beta.vercel.app
 
+## Demo Credentials
+
+> **Use the following account to access the admin dashboard:**
+
+| Field | Value |
+|-------|-------|
+| Email | akshay@example.com |
+| Password | admin123 |
+
+> **Note:** This account is provided solely for project evaluation.
+
 ## Features
 
 - User Authentication (NextAuth)
