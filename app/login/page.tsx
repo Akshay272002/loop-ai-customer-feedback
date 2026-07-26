@@ -62,7 +62,7 @@ export default function LoginPage() {
 
         <button
           type="submit"
-          className="w-full bg-black text-white p-3 rounded"
+          className="w-full bg-black text-white py-3 rounded-lg font-medium cursor-pointer shadow-md transition-all duration-200 hover:bg-gray-800 hover:shadow-xl hover:scale-[1.02] active:scale-95"
         >
           Admin Login
         </button>
