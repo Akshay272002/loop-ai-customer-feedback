@@ -4,7 +4,6 @@ import {
   MessageSquare,
   Upload,
   BarChart3,
-  Settings,
 } from "lucide-react";
 
 export default function Sidebar() {
@@ -14,7 +13,7 @@ export default function Sidebar() {
       {/* Logo */}
       <div className="p-6 border-b border-slate-700">
         <h1 className="text-3xl font-bold tracking-wide">
-          <a href="/">LOOP AI</a>
+          <Link href="/">LOOP AI</Link>
         </h1>
 
         <p className="text-slate-400 text-sm mt-1">
@@ -27,10 +26,18 @@ export default function Sidebar() {
 
         <Link
           href="/dashboard"
-          className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-blue-700 transition-all duration-200"
+          className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-blue-700 transition-all duration-200 hover:translate-x-1"
         >
           <LayoutDashboard size={20} />
           Dashboard
+        </Link>
+
+        <Link
+          href="/feedback"
+          className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-blue-700 transition-all duration-200 hover:translate-x-1"
+        >
+          <MessageSquare size={20} />
+          Feedback
         </Link>
 
         <Link
@@ -38,7 +45,7 @@ export default function Sidebar() {
           className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-blue-700 transition-all duration-200 hover:translate-x-1"
         >
           <MessageSquare size={20} />
-         Manage Feedback
+          Manage Feedback
         </Link>
 
         <Link
@@ -56,8 +63,6 @@ export default function Sidebar() {
           <BarChart3 size={20} />
           Reports
         </Link>
-
-        
 
       </nav>
 
