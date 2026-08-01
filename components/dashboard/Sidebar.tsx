@@ -33,7 +33,7 @@ export default function Sidebar() {
         </Link>
 
         <Link
-          href="/feedback"
+          href="/dashboard/feedback"
           className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-blue-700 transition-all duration-200 hover:translate-x-1"
         >
           <MessageSquare size={20} />
