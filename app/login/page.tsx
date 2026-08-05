@@ -42,7 +42,7 @@ export default function LoginPage() {
         onSubmit={handleLogin}
         className="w-full max-w-md p-8 border rounded-xl shadow"
       >
-        <h1 className="text-3xl font-bold mb-6">Login</h1>
+        <h1 className="text-3xl font-bold mb-6">Sign In</h1>
 
         <input
           type="email"
@@ -64,7 +64,7 @@ export default function LoginPage() {
           type="submit"
           className="w-full bg-black text-white py-3 rounded-lg font-medium cursor-pointer shadow-md transition-all duration-200 hover:bg-gray-800 hover:shadow-xl hover:scale-[1.02] active:scale-95"
         >
-          Admin Login
+           Sign In
         </button>
       </form>
     </main>
