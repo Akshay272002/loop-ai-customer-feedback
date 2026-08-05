@@ -22,25 +22,21 @@ export default function Navbar() {
           </div>
         </Link>
 
-        {/* Navigation */}
-
-
         {/* Buttons */}
-
         <div className="flex gap-3 text-black">
 
           <Link
             href="/login"
-            className="px-5 py-2 rounded-lg  border-gray-300 hover:text-blue-600"
+            className="px-5 py-2 rounded-lg border border-gray-300 hover:bg-gray-100 transition"
           >
-            Login
+            Sign In
           </Link>
 
           <Link
-            href="/feedback"
-            className="px-5 py-2 rounded-lg text-black hover:text-blue-600"
+            href="/register"
+            className="px-5 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition"
           >
-            Feedback
+            Sign Up
           </Link>
 
         </div>
