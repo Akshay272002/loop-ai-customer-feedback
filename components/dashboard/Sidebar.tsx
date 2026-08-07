@@ -17,8 +17,8 @@ export default function Sidebar() {
       {/* Logo */}
       <div className="p-6 border-b border-slate-700">
         <h1 className="text-3xl font-bold tracking-wide">
-          <Link href="/">LOOP AI</Link>
-        </h1>
+  LOOP AI
+</h1>
 
         <p className="text-slate-400 text-sm mt-1">
           Customer Intelligence
