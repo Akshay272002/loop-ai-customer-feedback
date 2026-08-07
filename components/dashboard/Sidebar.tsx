@@ -1,9 +1,13 @@
+"use client";
+
+import { signOut } from "next-auth/react";
 import Link from "next/link";
 import {
   LayoutDashboard,
   MessageSquare,
   Upload,
   BarChart3,
+  LogOut,
 } from "lucide-react";
 
 export default function Sidebar() {
@@ -65,6 +69,17 @@ export default function Sidebar() {
         </Link>
 
       </nav>
+
+      {/* Logout */}
+      <div className="px-4 pb-4">
+        <button
+          onClick={() => signOut({ callbackUrl: "/login" })}
+          className="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-red-400 hover:bg-red-600 hover:text-white transition-all duration-200"
+        >
+          <LogOut size={20} />
+          Logout
+        </button>
+      </div>
 
       {/* Footer */}
       <div className="border-t border-slate-700 p-5 text-center">
